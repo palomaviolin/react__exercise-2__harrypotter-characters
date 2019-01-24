@@ -39,23 +39,6 @@ class App extends Component {
       })
   }
 
-  // fetchCharacterData(){
-  //   fetchCharacters()
-  //     .then(data => {
-  //       let charactersObject = {};
-  //       for (const characterData of data){
-  //         let characterId = uniqueId();
-  //         charactersObject[characterId] = characterData;
-  //       }
-  //       console.log('console.log data:', data);
-  //       console.log('console.log charactersObject:', charactersObject);
-  //       this.setState ({
-  //         data: charactersObject,
-  //         filteredData: charactersObject
-  //       })
-  //     })
-  // }
-
   filterCharacterData(event){
     const inputName = event.target.value;
     console.log('INPUT', inputName);
