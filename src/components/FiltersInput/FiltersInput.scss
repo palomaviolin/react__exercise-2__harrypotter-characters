@@ -1,8 +1,18 @@
 .header {
-    text-align: center;
     padding-top: 35px;
     background-color: black; /* For browsers that do not support gradients */
     background-image: linear-gradient(to right, darkblue , black);
+    padding-left: 15%;
+}
+
+.container--main {
+    display: flex;
+    flex-direction: row;
+}
+
+.img-decoration {
+    width: 20%;
+    height: 20%;
 }
 
 .web-title {
@@ -19,4 +29,11 @@
     background-color: darkslategrey;
     color: lightgreen;
     margin-bottom: 40px;
+}
+
+@media (max-width: 720px){
+    .img-decoration {
+        display: none;
+        visibility: hidden;
+    }
 }

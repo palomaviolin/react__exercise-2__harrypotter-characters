@@ -16,15 +16,20 @@ class FiltersInput extends Component {
     render() {
         return (
             <header className="header">
-                <h1 className="web-title">Harry Potter characters</h1>
-                    <form>
-                        <input
-                        className="input-styles"
-                        placeholder="Search character..."
-                        ref={input => this.search = input}
-                        onChange={this.props.filterInput}
-                        />
-                    </form>
+                <div className="container--main">
+                    <img className="img-decoration" src="https://media.giphy.com/media/2zoIuUJvAa0TbSy1kT/giphy.gif" alt=""/>
+                        <div className="container_title-and-input">
+                            <h1 className="web-title">Harry Potter characters</h1>
+                            <form>
+                                <input
+                                className="input-styles"
+                                placeholder="Search character..."
+                                ref={input => this.search = input}
+                                onChange={this.props.filterInput}
+                                />
+                            </form>
+                        </div>
+                </div>
             </header>
          );
     }
