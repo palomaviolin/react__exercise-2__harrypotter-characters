@@ -13,9 +13,9 @@ class  CharacterCard extends Component {
         return (
             <Link to={`/characters/${this.props.characterId}`}>
                 <div className="character-container" onClick={this.showDetailedInfo}>
-                <h1>{characterData.name}</h1>
-                <img src={characterData.image} alt=""/>
-                <h2>{characterData.house}</h2>
+                <h1 className="text-character-name">{characterData.name}</h1>
+                <img className="character-img" src={characterData.image} alt=""/>
+                <h2 className="text-character-house">{characterData.house}</h2>
                 </div>
             </Link>
          );

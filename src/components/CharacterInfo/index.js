@@ -21,7 +21,7 @@ class CharacterInfo extends Component {
         return ( 
             <div className="character-container">
                 <h1>{characterData.name}</h1>
-                <img src={characterData.image} alt=""/>
+                <img className="character-img" src={characterData.image} alt=""/>
                 <ul>
                     <li>House: {characterData.house}</li>
                     <li>Birth: {characterData.yearOfBirth}</li>

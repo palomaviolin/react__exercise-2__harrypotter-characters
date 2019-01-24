@@ -14,7 +14,7 @@ class CharacterList extends Component {
             cards.push(<CharacterCard key={key} characterId={key} characterData={characterInfo} />)
         })
         return ( 
-            <main>
+            <main className="main">
                 {cards}
             </main>
          );

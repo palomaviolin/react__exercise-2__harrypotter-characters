@@ -15,7 +15,7 @@ class FiltersInput extends Component {
      
     render() {
         return (
-            <header>
+            <header className="header">
                 <h1>Harry Potter characters</h1>
                     <form>
                         <input
