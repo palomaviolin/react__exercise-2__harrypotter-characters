@@ -17,6 +17,11 @@ class App extends Component {
     this.filterCharacterData = this.filterCharacterData.bind(this);
   }
 
+  componentDidMount(){
+    this.fetchCharacterData()
+    console.log('COMPONENT-DID-MOUNT')
+  }
+
   fetchCharacterData(){
     fetchCharacters()
       .then(data => {
@@ -33,6 +38,23 @@ class App extends Component {
         })
       })
   }
+
+  // fetchCharacterData(){
+  //   fetchCharacters()
+  //     .then(data => {
+  //       let charactersObject = {};
+  //       for (const characterData of data){
+  //         let characterId = uniqueId();
+  //         charactersObject[characterId] = characterData;
+  //       }
+  //       console.log('console.log data:', data);
+  //       console.log('console.log charactersObject:', charactersObject);
+  //       this.setState ({
+  //         data: charactersObject,
+  //         filteredData: charactersObject
+  //       })
+  //     })
+  // }
 
   filterCharacterData(event){
     const inputName = event.target.value;
