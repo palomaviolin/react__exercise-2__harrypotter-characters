@@ -16,9 +16,10 @@ class FiltersInput extends Component {
     render() {
         return (
             <header className="header">
-                <h1>Harry Potter characters</h1>
+                <h1 className="web-title">Harry Potter characters</h1>
                     <form>
                         <input
+                        className="input-styles"
                         placeholder="Search character..."
                         ref={input => this.search = input}
                         onChange={this.props.filterInput}
