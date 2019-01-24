@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './FiltersInput.css';
+import './FiltersInput.scss';
 
 class FiltersInput extends Component {
     state = {

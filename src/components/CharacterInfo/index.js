@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './CharacterInfo.css';
+import './CharacterInfo.scss';
 
 class CharacterInfo extends Component {
     render() { 

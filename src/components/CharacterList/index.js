@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './CharacterList.css';
+import './CharacterList.scss';
 import CharacterCard from '../CharacterCard';
 
 class CharacterList extends Component {

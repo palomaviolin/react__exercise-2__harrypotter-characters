@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './CharacterCard.css';
+import './CharacterCard.scss';
 import { Link } from 'react-router-dom';
 
 class  CharacterCard extends Component {

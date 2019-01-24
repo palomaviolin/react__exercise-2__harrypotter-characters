@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import FiltersInput from '../FiltersInput';
 import CharacterList from '../CharacterList';
+import './Home.scss';
 
 class Home extends Component {
     render() { 

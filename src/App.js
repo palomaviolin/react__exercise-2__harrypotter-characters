@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './App.scss';
 import {fetchCharacters} from './components/services/CharactersService';
 import uniqueId from 'lodash.uniqueid';
 import Home from './components/Home';
