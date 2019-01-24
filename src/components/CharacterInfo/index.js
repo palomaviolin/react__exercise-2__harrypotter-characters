@@ -27,7 +27,9 @@ class CharacterInfo extends Component {
             houseShield = 'http://www.ruths-study.com/movies/harry-potter/sshield.jpg';
         } else if (characterData.house === 'Hufflepuff') {
             houseShield = 'http://www.ruths-study.com/movies/harry-potter/hshield.jpg';
-        } 
+        } else {
+            houseShield ='';
+        }
 
         return ( 
             <div className="principal-container-with-shield">
