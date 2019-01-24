@@ -1,16 +1,20 @@
 .character-container {
     width: 230px;
-    background-color: lightskyblue;
+    // background-color: lightskyblue;
+    background-image: url(https://wallpapersite.com/images/pages/pic_w/6362.jpg);
     margin: 18px;
     padding: 25px;
     justify-items: center;
     font-family: fantasy;
+    border-radius: 25px;
+    color: white;
 }
 
 .character-img {
     width: 210px;
     height: 300px;
     margin-left: 10px;
+    border-radius: 25px;
 }
 
 .text-character-name, .text-character-house {

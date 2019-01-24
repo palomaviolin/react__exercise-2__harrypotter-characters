@@ -1,12 +1,14 @@
 .header {
-    background-color: lightcyan;
     text-align: center;
     padding-top: 35px;
+    background-color: black; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, darkblue , black);
 }
 
 .web-title {
     font-family: fantasy;
     font-size: 50px;
+    color: white;
 }
 
 .input-styles {
@@ -14,4 +16,7 @@
     height: 30px;
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
+    background-color: darkslategrey;
+    color: lightgreen;
+    margin-bottom: 40px;
 }

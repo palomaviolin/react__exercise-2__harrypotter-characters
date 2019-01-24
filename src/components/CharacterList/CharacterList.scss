@@ -1,5 +1,6 @@
 .main {
-    background-color: lightcyan;
+    background-color: black; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, darkblue , black);
     display: flex;
     flex-wrap: wrap;
   }
