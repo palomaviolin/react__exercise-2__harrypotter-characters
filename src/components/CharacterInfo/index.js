@@ -13,7 +13,7 @@ class CharacterInfo extends Component {
         if (characterData.alive === true){
             deadOrAliveState = 'Alive';
         } else if (characterData.alive === false) {
-            deadOrAliveState = 'Dead';
+            deadOrAliveState = 'Dead 💀';
         } else {
             deadOrAliveState = 'Unknown';
         }
