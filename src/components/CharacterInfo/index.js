@@ -23,6 +23,7 @@ class CharacterInfo extends Component {
         }
 
         let houseShield;
+        let withoutHouse = 'Without house';
         if (characterData.house === 'Gryffindor'){
             houseShield = gryffindorShield;
         } else if (characterData.house === 'Ravenclaw') {
@@ -31,9 +32,12 @@ class CharacterInfo extends Component {
             houseShield = slytherinShield;
         } else if (characterData.house === 'Hufflepuff') {
             houseShield = hufflepuffShield;
-        } else {
+        } else if (characterData.house === '') {
             houseShield ='';
+            characterData.house = withoutHouse;
         }
+
+        const houseShieldElem = houseShield ? <img className="shield-image" src={houseShield} alt=""/> : null;
 
         return ( 
             <div className="principal-container-with-shield">
@@ -45,10 +49,9 @@ class CharacterInfo extends Component {
                         <li className="character-info-li">Birth: {characterData.yearOfBirth}</li>
                         <li className="character-info-li">Patronus: {characterData.patronus}</li>
                         <li className="character-info-li">{deadOrAliveState}</li>
-                        <img className="shield-image" src={houseShield} alt=""/>
+                        {houseShieldElem}
                     </ul>
                 </div>
-                {/* <img className="shield-image" src={houseShield} alt=""/> */}
             </div>
          );
     }

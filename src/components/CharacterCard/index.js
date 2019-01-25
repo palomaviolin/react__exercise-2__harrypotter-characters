@@ -11,6 +11,12 @@ class CharacterCard extends Component {
   render() {
     let characterData = this.props.characterData;
     console.log("Character chard", this.props);
+
+    let withoutHouse = 'Without house';
+    if (characterData.house === '') {
+      characterData.house = withoutHouse;
+    }
+
     return (
       <Link to={`/characters/${this.props.characterId}`}>
         <div className="character-container" onClick={this.showDetailedInfo}>
