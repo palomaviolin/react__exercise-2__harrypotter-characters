@@ -39,6 +39,10 @@ class CharacterInfo extends Component {
 
         const houseShieldElem = houseShield ? <img className="shield-image" src={houseShield} alt=""/> : null;
 
+        const patronusElement = characterData.patronus ? <li className="character-info-li">Patronus: {characterData.patronus}</li> : null;
+        
+        const birthElement = characterData.yearOfBirth ? <li className="character-info-li">Birth: {characterData.yearOfBirth}</li> : <li className="character-info-li">Birth: Unknown</li>;
+
         return ( 
             <div className="principal-container-with-shield">
                 <div className="character-container-info">
@@ -46,8 +50,8 @@ class CharacterInfo extends Component {
                     <img className="character-img" src={characterData.image} alt=""/>
                     <ul>
                         <li className="character-info-li">House: {characterData.house}</li>
-                        <li className="character-info-li">Birth: {characterData.yearOfBirth}</li>
-                        <li className="character-info-li">Patronus: {characterData.patronus}</li>
+                        {birthElement}
+                        {patronusElement}
                         <li className="character-info-li">{deadOrAliveState}</li>
                         {houseShieldElem}
                     </ul>

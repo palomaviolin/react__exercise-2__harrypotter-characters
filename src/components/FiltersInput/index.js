@@ -23,7 +23,7 @@ class FiltersInput extends Component {
                             <form>
                                 <input
                                 className="input-styles"
-                                placeholder="Search character..."
+                                placeholder=" Search character..."
                                 ref={input => this.search = input}
                                 onChange={this.props.filterInput}
                                 />
