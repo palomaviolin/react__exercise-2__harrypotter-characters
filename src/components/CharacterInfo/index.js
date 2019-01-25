@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import './CharacterInfo.scss';
+import gryffindorShield from '../../images/gryffindorShield.png';
+import ravenclawShield from '../../images/ravenclawShield.png';
+import slytherinShield from '../../images/slytherinShield.png';
+import hufflepuffShield from '../../images/hufflepuffShield.png';
 
 class CharacterInfo extends Component {
     render() { 
@@ -20,13 +24,17 @@ class CharacterInfo extends Component {
 
         let houseShield;
         if (characterData.house === 'Gryffindor'){
-            houseShield = 'http://www.ruths-study.com/movies/harry-potter/gshield.jpg';
+            // houseShield = 'http://www.ruths-study.com/movies/harry-potter/gshield.jpg';
+            houseShield = gryffindorShield;
         } else if (characterData.house === 'Ravenclaw') {
-            houseShield = 'https://musingsfromnevillesnavel.files.wordpress.com/2011/08/ravenclaw-shield1.jpg';
+            houseShield = ravenclawShield;
+            // houseShield = 'https://musingsfromnevillesnavel.files.wordpress.com/2011/08/ravenclaw-shield1.jpg';
         } else if (characterData.house === 'Slytherin') {
-            houseShield = 'http://www.ruths-study.com/movies/harry-potter/sshield.jpg';
+            houseShield = slytherinShield;
+            // houseShield = 'http://www.ruths-study.com/movies/harry-potter/sshield.jpg';
         } else if (characterData.house === 'Hufflepuff') {
-            houseShield = 'http://www.ruths-study.com/movies/harry-potter/hshield.jpg';
+            houseShield = hufflepuffShield;
+            // houseShield = 'http://www.ruths-study.com/movies/harry-potter/hshield.jpg';
         } else {
             houseShield ='';
         }
@@ -41,9 +49,10 @@ class CharacterInfo extends Component {
                         <li className="character-info-li">Birth: {characterData.yearOfBirth}</li>
                         <li className="character-info-li">Patronus: {characterData.patronus}</li>
                         <li className="character-info-li">{deadOrAliveState}</li>
+                        <img className="shield-image" src={houseShield} alt=""/>
                     </ul>
                 </div>
-                <img className="shield-image" src={houseShield} alt=""/>
+                {/* <img className="shield-image" src={houseShield} alt=""/> */}
             </div>
          );
     }
