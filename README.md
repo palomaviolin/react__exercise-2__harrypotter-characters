@@ -2,6 +2,8 @@
 
 Enter the resulting website of this repo where you can find information about your favourite characters of Harry Potter's World. Enjoy! http://beta.adalab.es/e-s3-evaluacion-final-palomaviolin/
 
+NOTE: All rights and copyright of character's information and music belongs to _The Wizarding World of Harry Potter_ ©, _Warner Bross_ ©, _J. K. Rowling_ and _John Williams_.
+
 ![](src/images/potterPokemon.gif)
 
 # How to use this repo

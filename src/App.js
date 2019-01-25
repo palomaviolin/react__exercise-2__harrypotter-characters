@@ -19,7 +19,6 @@ class App extends Component {
 
   componentDidMount() {
     this.fetchCharacterData();
-    console.log("COMPONENT-DID-MOUNT");
   }
 
   fetchCharacterData() {
@@ -29,8 +28,6 @@ class App extends Component {
         let characterId = uniqueId();
         charactersObject[characterId] = characterData;
       }
-      console.log("console.log data:", data);
-      console.log("console.log charactersObject:", charactersObject);
       this.setState({
         data: charactersObject,
         filteredData: charactersObject
@@ -40,7 +37,6 @@ class App extends Component {
 
   filterCharacterData(event) {
     const inputName = event.target.value;
-    console.log("INPUT", inputName);
     if (inputName === "") {
       this.fetchCharacterData();
       return;
@@ -60,9 +56,6 @@ class App extends Component {
     this.setState({
       filteredData
     });
-
-    console.log(event);
-    console.log(event.target.value);
   }
 
   render() {

@@ -12,7 +12,6 @@ class FiltersInput extends Component {
     this.setState({
       query: this.search.value
     });
-    console.log(this.state.query);
   };
 
   render() {

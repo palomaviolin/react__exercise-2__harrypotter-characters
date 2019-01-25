@@ -5,7 +5,6 @@ import "./Home.scss";
 
 class Home extends Component {
   render() {
-    console.log("HOME", this.props);
     return (
       <React.Fragment>
         <FiltersInput filterInput={this.props.filterCharacterData} />

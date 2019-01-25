@@ -5,12 +5,10 @@ import PropTypes from "prop-types";
 
 class CharacterCard extends Component {
   showDetailedInfo() {
-    console.log("CLicked");
   }
 
   render() {
     let characterData = this.props.characterData;
-    console.log("Character chard", this.props);
 
     let withoutHouse = "Without house";
     if (characterData.house === "") {
