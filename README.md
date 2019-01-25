@@ -1,6 +1,10 @@
-# e-s3-evaluacion-final-palomaviolin
+# Harry Potter characters
 
-----------------------------------------------------------------
+Enter the resulting website of this repo where you can find information about your favourite characters of Harry Potter's World. Enjoy! http://beta.adalab.es/e-s3-evaluacion-final-palomaviolin/
+
+![](src/images/potterPokemon.gif)
+
+# How to use this repo
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
