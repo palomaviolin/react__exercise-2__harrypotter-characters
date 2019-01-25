@@ -1,42 +1,40 @@
 .principal-container-with-shield {
-    display: flex;
-    justify-content: center;
-    background-color: black;
+  display: flex;
+  justify-content: center;
+  background-color: black;
 }
 
 .character-container-info {
-    width: 300px;
-    // background-color: lightskyblue;
-    // background-image: url(https://wallpapersite.com/images/pages/pic_w/6362.jpg);
-    background-image: url(../../images/skyBackground.jpg);
-    margin: 18px;
-    padding: 12px 25px;
-    justify-items: center;
-    font-family: fantasy;
-    border-radius: 25px;
-    color: white;
-    text-align: center;
+  width: 300px;
+  background-image: url(../../images/skyBackground.jpg);
+  margin: 18px;
+  padding: 12px 25px;
+  justify-items: center;
+  font-family: fantasy;
+  border-radius: 25px;
+  color: white;
+  text-align: center;
 }
 
 .character-img {
-    width: 210px;
-    height: 300px;
-    border-radius: 25px;
+  width: 210px;
+  height: 300px;
+  border-radius: 25px;
 }
 
 .character-info-li {
-    list-style-type: none;
-    font-size: 26px;
+  list-style-type: none;
+  font-size: 26px;
 }
 
 .shield-image {
-    width: 25vh;
-    height: 25vh;
-    margin-top: 5px;
+  width: 25vh;
+  height: 25vh;
+  margin-top: 5px;
 }
 
 .audio-box-info {
-    margin-bottom: 20px;
-    visibility: hidden;
-    display: none;
+  margin-bottom: 20px;
+  visibility: hidden;
+  display: none;
 }

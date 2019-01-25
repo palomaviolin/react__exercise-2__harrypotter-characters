@@ -1,52 +1,45 @@
 .header {
-    padding-top: 35px;
-    background-color: black; /* For browsers that do not support gradients */
-    background-image: linear-gradient(to right, darkblue , black);
-    padding-left: 15%;
+  padding-top: 35px;
+  background-color: black;
+  background-image: linear-gradient(to right, darkblue, black);
+  padding-left: 15%;
 }
 
 .container--main {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .img-decoration {
-    width: 20%;
-    height: 20%;
-}
-
-.web-title {
-    font-family: fantasy;
-    font-size: 50px;
-    color: white;
+  width: 20%;
+  height: 20%;
 }
 
 .input-styles {
-    width: 291px;
-    height: 30px;
-    font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
-    background-color: darkslategrey;
-    color: lightgreen;
-    margin-bottom: 10px;
+  width: 291px;
+  height: 30px;
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+  background-color: darkslategrey;
+  color: lightgreen;
+  margin-bottom: 10px;
 }
 
 body {
-    background-color: black; /* For browsers that do not support gradients */
-    background-image: linear-gradient(to right, darkblue , black);
+  background-color: black;
+  background-image: linear-gradient(to right, darkblue, black);
 }
 
 .audio-box {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
-@media (max-width: 720px){
-    .img-decoration {
-        display: none;
-        visibility: hidden;
-    }
-    .input-styles {
-        // width: 60%;
-        font-size: 14px;
-    }
+@media (max-width: 720px) {
+  .img-decoration {
+    display: none;
+    visibility: hidden;
+  }
+  .input-styles {
+    font-size: 14px;
+  }
 }

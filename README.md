@@ -1,4 +1,4 @@
-# Harry Potter characters
+![](src/images/titleBigPlus.png)
 
 Enter the resulting website of this repo where you can find information about your favourite characters of Harry Potter's World. Enjoy! http://beta.adalab.es/e-s3-evaluacion-final-palomaviolin/
 

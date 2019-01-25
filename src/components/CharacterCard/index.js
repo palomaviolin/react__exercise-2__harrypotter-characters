@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./CharacterCard.scss";
 import { Link } from "react-router-dom";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 class CharacterCard extends Component {
   showDetailedInfo() {
@@ -12,8 +12,8 @@ class CharacterCard extends Component {
     let characterData = this.props.characterData;
     console.log("Character chard", this.props);
 
-    let withoutHouse = 'Without house';
-    if (characterData.house === '') {
+    let withoutHouse = "Without house";
+    if (characterData.house === "") {
       characterData.house = withoutHouse;
     }
 
@@ -31,10 +31,10 @@ class CharacterCard extends Component {
 
 CharacterCard.propTypes = {
   characterData: PropTypes.shape({
-    name:PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
     house: PropTypes.string.isRequired
   }).isRequired
-}
+};
 
 export default CharacterCard;
