@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./CharacterCard.scss";
 import { Link } from "react-router-dom";
+import PropTypes from 'prop-types';
 
 class CharacterCard extends Component {
   showDetailedInfo() {
@@ -20,6 +21,14 @@ class CharacterCard extends Component {
       </Link>
     );
   }
+}
+
+CharacterCard.propTypes = {
+  characterData: PropTypes.shape({
+    name:PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    house: PropTypes.string.isRequired
+  }).isRequired
 }
 
 export default CharacterCard;
