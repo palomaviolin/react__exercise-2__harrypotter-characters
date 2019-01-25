@@ -22,18 +22,22 @@
 }
 
 .input-styles {
-    width: 300px;
+    width: 291px;
     height: 30px;
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
     background-color: darkslategrey;
     color: lightgreen;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 
 body {
     background-color: black; /* For browsers that do not support gradients */
     background-image: linear-gradient(to right, darkblue , black);
+}
+
+.audio-box {
+    margin-bottom: 20px;
 }
 
 @media (max-width: 720px){
@@ -42,7 +46,7 @@ body {
         visibility: hidden;
     }
     .input-styles {
-        width: 60%;
+        // width: 60%;
         font-size: 14px;
     }
 }

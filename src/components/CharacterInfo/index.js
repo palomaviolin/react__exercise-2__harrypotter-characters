@@ -4,6 +4,7 @@ import gryffindorShield from '../../images/gryffindorShield.png';
 import ravenclawShield from '../../images/ravenclawShield.png';
 import slytherinShield from '../../images/slytherinShield.png';
 import hufflepuffShield from '../../images/hufflepuffShield.png';
+import DoubleTroubleSong from '../../music/DoubleTroubleSong.mp3';
 
 class CharacterInfo extends Component {
     render() {
@@ -46,6 +47,7 @@ class CharacterInfo extends Component {
         return ( 
             <div className="principal-container-with-shield">
                 <div className="character-container-info">
+                <audio className="audio-box-info" ref="audio_tag" src={DoubleTroubleSong} controls autoPlay/>
                     <h1>{characterData.name}</h1>
                     <img className="character-img" src={characterData.image} alt=""/>
                     <ul>
