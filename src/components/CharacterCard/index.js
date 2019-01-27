@@ -30,7 +30,7 @@ CharacterCard.propTypes = {
   characterData: PropTypes.shape({
     name: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
-    house: PropTypes.string.isRequired
+    house: PropTypes.string
   }).isRequired
 };
 

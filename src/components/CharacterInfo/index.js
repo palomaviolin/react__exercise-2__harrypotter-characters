@@ -6,6 +6,7 @@ import ravenclawShield from "../../images/ravenclawShield.png";
 import slytherinShield from "../../images/slytherinShield.png";
 import hufflepuffShield from "../../images/hufflepuffShield.png";
 import DoubleTroubleSong from "../../music/DoubleTroubleSong.mp3";
+import PropTypes from "prop-types";
 
 class CharacterInfo extends Component {
   render() {
@@ -84,5 +85,15 @@ class CharacterInfo extends Component {
     );
   }
 }
+
+CharacterInfo.propTypes = {
+  characters: PropTypes.arrayOf(PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    house: PropTypes.string,
+    patronus: PropTypes.string,
+    alive: PropTypes.bool
+  })).isRequired
+};
 
 export default CharacterInfo;
