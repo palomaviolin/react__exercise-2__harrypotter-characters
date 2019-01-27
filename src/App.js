@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "./App.scss";
 import { fetchCharacters } from "./components/services/CharactersService";
-import uniqueId from "lodash.uniqueid";
 import Home from "./components/Home";
 import CharacterInfo from "./components/CharacterInfo";
 import { Route, Switch } from "react-router-dom";
@@ -10,8 +9,8 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: {},
-      filteredData: {}
+      data: [],
+      filteredData: []
     };
     this.fetchCharacterData();
     this.filterCharacterData = this.filterCharacterData.bind(this);
@@ -23,14 +22,15 @@ class App extends Component {
 
   fetchCharacterData() {
     fetchCharacters().then(data => {
-      let charactersObject = {};
-      for (const characterData of data) {
-        let characterId = uniqueId();
-        charactersObject[characterId] = characterData;
-      }
+      let characterData = data.map((characterItem, index) => {
+        return {
+          id: index + 1,
+          ...characterItem
+        };
+      });
       this.setState({
-        data: charactersObject,
-        filteredData: charactersObject
+        data: characterData,
+        filteredData: characterData
       });
     });
   }
@@ -44,13 +44,9 @@ class App extends Component {
 
     const characterData = this.state.data;
 
-    let filteredData = {};
-    Object.keys(characterData).forEach(key => {
-      let characterInfo = characterData[key];
-      let characterName = (characterInfo.name || "").toLowerCase();
-      if (characterName.includes(inputName)) {
-        filteredData[key] = characterInfo;
-      }
+    let filteredData = characterData.filter(characterItem => {
+      let characterName = characterItem.name.toLowerCase();
+      return characterName.includes(inputName);
     });
 
     this.setState({

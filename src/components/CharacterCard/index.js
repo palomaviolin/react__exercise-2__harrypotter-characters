@@ -4,8 +4,7 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
 class CharacterCard extends Component {
-  showDetailedInfo() {
-  }
+  showDetailedInfo() {}
 
   render() {
     let characterData = this.props.characterData;
@@ -16,7 +15,7 @@ class CharacterCard extends Component {
     }
 
     return (
-      <Link to={`/characters/${this.props.characterId}`}>
+      <Link to={`/characters/${characterData.id}`}>
         <div className="character-container" onClick={this.showDetailedInfo}>
           <h1 className="text-character-name">{characterData.name}</h1>
           <img className="character-img" src={characterData.image} alt="" />

@@ -9,7 +9,11 @@ import DoubleTroubleSong from "../../music/DoubleTroubleSong.mp3";
 class CharacterInfo extends Component {
   render() {
     let characters = this.props.characters;
-    let characterData = characters[this.props.match.params.id];
+    let targetCharacterId = parseInt(this.props.match.params.id) || 0;
+
+    let characterData = characters.find(characterItem => {
+      return characterItem.id === targetCharacterId;
+    });
     if (!characterData) {
       return null;
     }
