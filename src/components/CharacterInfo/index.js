@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import "./CharacterInfo.scss";
 import gryffindorShield from "../../images/gryffindorShield.png";
 import ravenclawShield from "../../images/ravenclawShield.png";
@@ -75,6 +76,9 @@ class CharacterInfo extends Component {
             <li className="character-info-li">{deadOrAliveState}</li>
             {houseShieldElem}
           </ul>
+          <Link to="/">
+            <button className="button-return">Return</button>
+          </Link>
         </div>
       </div>
     );
