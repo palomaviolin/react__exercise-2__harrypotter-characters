@@ -24,7 +24,7 @@ class FiltersInput extends Component {
             alt=""
           />
           <div className="container_title-and-input">
-            <img src={titleSmall} alt="" />
+            <img className="title-website" src={titleSmall} alt="" />
             <form>
               <input
                 className="input-styles"

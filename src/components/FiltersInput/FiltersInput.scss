@@ -34,6 +34,15 @@ body {
   margin-bottom: 20px;
 }
 
+@media (max-width: 360px) {
+  .title-website {
+    max-width: 80%;
+  }
+  .audio-box, .input-styles {
+    width: 220px;
+  }
+}
+
 @media (max-width: 720px) {
   .img-decoration {
     display: none;
