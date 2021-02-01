@@ -32,6 +32,11 @@ class FiltersInput extends Component {
                 ref={input => (this.search = input)}
                 onChange={this.props.filterInput}
               />
+              <input 
+              className="input-styles"
+              placeholder=" Search by blood..."
+              onChange={this.props.filterInputBlood}
+              />
             </form>
             <audio
               className="audio-box"

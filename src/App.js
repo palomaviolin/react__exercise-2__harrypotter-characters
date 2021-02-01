@@ -10,10 +10,13 @@ class App extends Component {
     super(props);
     this.state = {
       data: [],
-      filteredData: []
+      filteredData: [],
+      filteredDataBlood: []
     };
     this.fetchCharacterData();
+    this.fetchCharacterBlood();
     this.filterCharacterData = this.filterCharacterData.bind(this);
+    this.filterCharacterDataBlood = this.filterCharacterDataBlood.bind(this);
   }
 
   componentDidMount() {
@@ -31,6 +34,21 @@ class App extends Component {
       this.setState({
         data: characterData,
         filteredData: characterData
+      });
+    });
+  }
+
+  fetchCharacterBlood() {
+    fetchCharacters().then(data => {
+      let characterData = data.map((characterItem, index) => {
+        return {
+          id: index + 1,
+          ...characterItem
+        };
+      });
+      this.setState({
+        data: characterData,
+        filteredDataBlood: characterData
       });
     });
   }
@@ -54,6 +72,26 @@ class App extends Component {
     });
   }
 
+  filterCharacterDataBlood(event) {
+    console.log(this.state);
+    const inputName = event.target.value;
+    if (inputName === "") {
+      this.fetchCharacterBlood();
+      return;
+    }
+
+    const characterData = this.state.data;
+
+    let filteredDataBlood = characterData.filter(characterItem => {
+      let characterBlood = characterItem.ancestry.toLowerCase();
+      return characterBlood.includes(inputName);
+    });
+
+    this.setState({
+      filteredDataBlood
+    });
+  }
+
   render() {
     return (
       <Switch>
@@ -63,7 +101,8 @@ class App extends Component {
           render={() => (
             <Home
               filterCharacterData={this.filterCharacterData}
-              data={this.state.filteredData}
+              filterCharacterBlood={this.filterCharacterDataBlood}
+              data={this.state.filteredDataBlood}
             />
           )}
         />
@@ -71,7 +110,7 @@ class App extends Component {
           path="/characters/:id"
           render={props => (
             <CharacterInfo
-              characters={this.state.filteredData}
+              characters={this.state.filteredDataBlood}
               match={props.match}
             />
           )}

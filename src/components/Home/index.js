@@ -7,7 +7,7 @@ class Home extends Component {
   render() {
     return (
       <React.Fragment>
-        <FiltersInput filterInput={this.props.filterCharacterData} />
+        <FiltersInput filterInput={this.props.filterCharacterData} filterInputBlood={this.props.filterCharacterBlood}/>
         <CharacterList data={this.props.data} />
       </React.Fragment>
     );

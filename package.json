@@ -1,8 +1,8 @@
 {
-  "name": "sprint_3_evaluacion_final",
+  "name": "react__exercise-2__harrypotter-characters/",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://beta.adalab.es/e-s3-evaluacion-final-palomaviolin/",
+  "homepage": "https://palomaviolin.github.io/react__exercise-2__harrypotter-characters/",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "lodash": "^4.17.11",
